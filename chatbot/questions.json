@@ -1,27 +1,27 @@
 [
   {
     "id": 1,
-    "question": "Find 'Pups To The Rescue!'",
-    "query": "SELECT Location FROM Books WHERE Name = 'Pups To The Rescue!'"
+    "question": "Where is 'Christmas Is Coming!'?",
+    "query": "SELECT location FROM books WHERE name = 'Christmas Is Coming!'"
   },
   {
     "id": 2,
-    "question": "Find 'I Love My White Shoes'",
-    "query": "SELECT id FROM books WHERE subtitle  = 'I Love My White Shoes'"
+    "question": "Where is 'I Love My White Shoes'?",
+    "query": "SELECT location FROM books WHERE name = 'I Love My White Shoes'"
   },
   {
     "id": 3,
-    "question": "Find 'The Very Hungry Caterpillar'",
-    "query": "SELECT Location FROM Books WHERE Name = 'Pups To The Rescue!'"
+    "question": "Where is 'The Very Hungry Caterpillar'?",
+    "query": "SELECT location FROM books WHERE name = 'The Very Hungry Caterpillar'"
   },
   {
     "id": 4,
-    "question": "How many books are there in THE library?",
+    "question": "How many books does the library have?",
     "query": "SELECT COUNT(*) FROM books;"
   },
   {
     "id": 5,
-    "question": "how many Paw Patrol books in the library",
-    "query": "SELECT COUNT(*) FROM books WHERE subtitle = 'Snow Daze';"
+    "question": "How many books about Paw Patrol are in the library?",
+    "query": "SELECT COUNT(*) FROM books WHERE series = 'Paw Patrol';"
   }
 ]

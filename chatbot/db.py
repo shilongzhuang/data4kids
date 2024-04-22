@@ -39,18 +39,12 @@ class MySQLConnection:
                 result = cursor.fetchall()
                 columns = [col[0] for col in cursor.description]
                 df = pd.DataFrame(result, columns=columns)
-                print(df)
-                return df
+                return df, "Query executed successfully."
             elif any(keyword in query.strip().lower() for keyword in ('insert', 'delete', 'create')):
                 self.connection.commit()
-                message = "Query executed successfully."
-                print(message)
-                return message
+                return None, "Query executed successfully."
             else:
-                message = "Invalid SQL query. Supported operations: SELECT, INSERT, DELETE, CREATE"
-                print(message)
-                return message
+                return None, "Invalid SQL query. Supported operations: SELECT, INSERT, DELETE, CREATE"
 
         except mysql.connector.Error as err:
-            print(f"Error: {err}")
-            return str(err)
+            return None, str(f"Error: {err}")
