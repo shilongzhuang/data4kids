@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "question": "Find 'Pups To The Rescue!'",
+    "query": "SELECT Location FROM Books WHERE Name = 'Pups To The Rescue!'"
+  },
+  {
+    "id": 2,
+    "question": "Find 'I Love My White Shoes'",
+    "query": "SELECT id FROM books WHERE subtitle  = 'I Love My White Shoes'"
+  },
+  {
+    "id": 3,
+    "question": "Find 'The Very Hungry Caterpillar'",
+    "query": "SELECT Location FROM Books WHERE Name = 'Pups To The Rescue!'"
+  },
+  {
+    "id": 4,
+    "question": "How many books are there in THE library?",
+    "query": "SELECT COUNT(*) FROM books;"
+  },
+  {
+    "id": 5,
+    "question": "how many Paw Patrol books in the library",
+    "query": "SELECT COUNT(*) FROM books WHERE subtitle = 'Snow Daze';"
+  }
+]
