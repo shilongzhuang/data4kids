@@ -21,7 +21,7 @@ class MySQLConnection:
     def connect(self):
         try:
             self.connection = mysql.connector.connect(**self.config)
-            print("Connected to MySQL database")
+            # print("Connected to MySQL database")
         except mysql.connector.Error as err:
             print(f"Error: {err}")
 

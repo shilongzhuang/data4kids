@@ -155,7 +155,7 @@ def main():
             result, status = connection.execute_query(prompt)
             if "Error" in status:
                 _prompt_message = Message(role="user", content=prompt, content_type="text")
-                response = "I don't understand!"
+                response = "Sorry, I don't understand!"
                 _response_message = Message(role="assistant", content=response, content_type="text")
                 with st.chat_message(name="user"):
                     st.write(prompt)
